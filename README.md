@@ -1,2 +1,4 @@
 # Alex-Bepple-Resume
-Resume Build in LATEX
+Resume Built in LATEX
+
+<img src="ResumeCapture.png">

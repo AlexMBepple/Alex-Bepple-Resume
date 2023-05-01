@@ -1,0 +1,203 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[darkhipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Graduate CV}
+\author{\LaTeX{} Alex}
+\date{May 2023}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{materialgreen}{Alex}{Bepple}{EIT}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+
+\paracolbackgroundoptions
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{pfp.jpeg}
+\end{center}
+
+\bg{materialgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize
+I am an eager, young, qualified recent graduate looking to begin a career in technology where I can be a positive impact and help to bring success to my future team. I like to have a positive attitude towards work and use collaboration to produce outcomes that show the strengths of everyone on board and surpass peoples expectations.
+}
+
+\bigskip
+
+\bg{materialgreen}{white}{Personal} \\[0.5em]
+
+Nationality: Canadian 
+
+Birth Year: 2000
+
+\bigskip
+
+\bg{materialgreen}{white}{Areas of specialization} \\[0.5em]
+
+Algorithm Optimization
+
+MERN Stack Development
+
+Machine Learning
+
+Computer Vision
+
+\bigskip
+
+
+\bg{materialgreen}{white}{Interests}\\[0.5em]
+I have a love for music, and am intrigued with ways that the bleeding edge of artificial intelligence can integrate and improve quality of life.
+
+\bigskip
+
+\bg{materialgreen}{white}{Hobbies}\\[0.5em]
+
+\texttt{Soccer}
+
+\texttt{Music Production}
+
+\texttt{Artificial Intelligence}
+
+\vspace{4em}
+
+\bigskip
+\infobubble{\faPhone}{materialgreen}{white}{778-220-8465}
+\bigskip
+\infobubble{\faAt}{materialgreen}{white}{axbepp@gmail.com}
+\bigskip
+\infobubble{\faLinkedin}{materialgreen}{white}{alex-bepple}
+\bigskip
+\infobubble{\faGithub}{materialgreen}{white}{AlexMBepple}
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Notable Projects}
+
+\begin{tabular}{p{0.075\textwidth} | p{0.475\textwidth} c}
+    \cvevent{2023 Capstone}{Machine Learning Computer Vision Mushroom Classification}{Lead}{Thompson Rivers University - Techbrew Robotics \color{cvred}}{Worked with one colleague to develop a machine learning computer vision classification system to interface with a mushroom picking robot from Techbrew Robotics. Our goals were speed and accuracy of classifications.}{techbrew.jpeg} 
+    \\
+    \cvevent{2023 Class Project}{Mern Stack Web Development Project}{Lead}{Thompson Rivers University \color{cvred}}{Worked with a classmate to develop a full MongoDB - Express- React - Node web shop for a petstore. It gave me practical experience in full stack web development. This project is viewable on my GitHub. }{mern-stack.png}
+\end{tabular}
+\vspace{1em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Degree Highlights}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{4640}{Web Applications}{MERN Stack}{TRU \color{headerblue}}{Web development including basics of HTML and CSS, DOM, JS, REACT}{TRU engineering logo.png} \\
+    \cvdegree{4620}{Cloud Computing}{AWS Services}{TRU \color{headerblue}}{Leveraging Amazon Web Services and cloud environments.}{TRU engineering logo.png} \\
+    \cvdegree{4220}{Networks}{Connectivity}{TRU \color{headerblue}}{Connecting software utilizing standard protocols for global use.}{TRU engineering logo.png}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{HTML, CSS, JS} &  \barrule{0.55}{0.5em}{materialgreen}\\
+     \bg{skilllabelcolour}{iconcolour}{C++} & \barrule{0.5}{0.5em}{materialgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Ada} & \barrule{0.35}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Java} & \barrule{0.4}{0.5em}{materialgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{C\#} & \barrule{0.55}{0.5em}{materialgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{SQL} & \barrule{0.37}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.3}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.45}{0.5em}{materialgreen} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Professional Experience}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{05/22-09/22}{Traqspera Technologies}{Testing and Support (SQL, Zendesk, Jira)}{Kamloops \color{cvred}}{Leveraged SQL queries to answer customer questions and solve support problems, escalating them where necessary.}{traq.png} \\
+    \cvevent{05/21 - 01/22}{Raptor Integration}{CO-OP Developer (C\#, NVIDIA Cuda Toolkit)}{Salmon Arm \color{cvred}}{Updated and developed features of an automated sawmill, achieving fast and accurate decisions leveraging multi threaded processes.}{raptor.jpeg} \\
+\end{tabular}
+\vspace{1em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Awards \& Bursaries}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2023 & Ken Lepin Award \\
+    2022 & KLM Memorial Bursary \\
+    2018--2023 & Other Awards totalling roughly 17k
+\end{tabular}
+\bigskip
+\section*{Personal Wins}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2022 & Released an Album \\
+    2020 & Moved out on my own \\
+    2018 & Recruited for TRU Mens Soccer Practice Squad    
+\end{tabular}
+\bigskip
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Current Project}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    2023 & \emph{Voice Cloning using Tortoise-TTS-Fast}. A system that uses tone and cadence cloning to create an advanced text to speech software. \\
+\end{tabular}
+\bigskip
+
+\section*{Achievements}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    May 2023 & Became the youngest graduate of the Software Engineering Program at \emph{Thompson Rivers University} in its history.
+\end{tabular}
+\end{minipage}
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Alex Bepple \icon{\faEnvelopeO}{materialgreen}{} AXBEPP@GMAIL.COM \icon{\faMapMarker}{materialgreen}{} KAMLOOPS, BC \icon{\faPhone}{materialgreen}{} 778.220.8465 \newline\icon{\faGithub}{materialgreen}{} \protect\url{HTTPS://github.com/AlexMBepple}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
